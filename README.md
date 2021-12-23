@@ -2,7 +2,7 @@
 ## 1. GCP Personal Project<br/>
   - **Infrastructure build using CLI/Google Cloud SDK**
     * VPC, VM Instances, Cloud Storge, Cloud DNS, Cloud CDN
-    * GKE(Containers, CI/CD using Jenkins)
+    * GKE(Containers, CI/CD pipeline using Jenkins)
     * Cloud SQL, Dataflow, BigQuery, 
   - **Infrastructure build using Terraform**
     * VPC, VM Instances, Cloud Storge, Cloud SQL
