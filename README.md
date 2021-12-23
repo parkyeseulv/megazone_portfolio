@@ -1,2 +1,2 @@
-# megazon_portfollio
-GCP Solutions Architect
+#박예슬 포트폴리오
+GCP 구축 
