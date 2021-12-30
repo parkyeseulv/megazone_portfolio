@@ -3,7 +3,7 @@
 ## 1. GCP Personal Project<br>
   - **Infrastructure build using CLI/Google Cloud SDK**
     * Google Kubernetes Engine(Containers, CI/CD pipeline using Jenkins)
-    * Google Source Repository, Google Container Registry, Cloud Build
+    * Cloud Source Repository, Google Container Registry, Cloud Build
     * Virtual Private Cloud, Compute Engine, Cloud Storge, Cloud DNS, Cloud CDN
     * Cloud SQL, Cloud Bigtable
     * Dataproc, Dataflow, Cloud Function<br>
