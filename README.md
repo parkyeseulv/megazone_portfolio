@@ -7,7 +7,8 @@
     * Cloud Source Repository, Google Container Registry, Cloud Build
     * Virtual Private Cloud, Compute Engine, Cloud Storge, Cloud DNS, Cloud CDN
     * Cloud SQL, Cloud Bigtable
-    * Dataproc, Dataflow, Cloud Function<br>
+    * Dataproc, Dataflow, Cloud Function
+    * Python, Go, Apache Beam, Apache Spark<br>
   - **Infrastructure build using Terraform**
     * Virtual Private Cloud, Compute Engine, Cloud Storge, Cloud SQL
     * Google Kubernetes Engine<br>
