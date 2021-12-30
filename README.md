@@ -2,14 +2,14 @@
 # CONTENTS<br>
 ## 1. GCP Personal Project<br>
   - **Infrastructure build using CLI/Google Cloud SDK**
-    * GKE(Containers, CI/CD pipeline using Jenkins)
-    * GSR, GCR, Cloud Build
-    * VPC, Compute Engine, Cloud Storge, Cloud DNS, Cloud CDN
-    * Cloud SQL, Cloud Bigtable, Cloud Spanner
-    * Dataproc, Dataflow, Cloud Fucntion<br>
+    * Google Kubernetes Engine(Containers, CI/CD pipeline using Jenkins)
+    * Google Source Repository, Google Container Registry, Cloud Build
+    * Virtual Private Cloud, Compute Engine, Cloud Storge, Cloud DNS, Cloud CDN
+    * Cloud SQL, Cloud Bigtable
+    * Dataproc, Dataflow, Cloud Function<br>
   - **Infrastructure build using Terraform**
-    * VPC, VM Instances, Cloud Storge, Cloud SQL
-    * GKE(Clusters)<br>
+    * Virtual Private Cloud, Compute Engine, Cloud Storge, Cloud SQL
+    * Google Kubernetes Engine<br>
   - **Web application**
     * Python, JavaScript, HTML, Flask, Angular
     * Pub/Sub, Cloud Spanner, Natural Language AI
