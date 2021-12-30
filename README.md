@@ -4,8 +4,9 @@
   - **Infrastructure build using CLI/Google Cloud SDK**
     * GKE(Containers, CI/CD pipeline using Jenkins)
     * GSR, GCR, Cloud Build
-    * VPC, VM Instances, Cloud Storge, Cloud DNS, Cloud CDN
-    * Cloud SQL, Dataflow, BigQuery,<br>
+    * VPC, Compute Engine, Cloud Storge, Cloud DNS, Cloud CDN
+    * Cloud SQL, Cloud Bigtable, Cloud Spanner
+    * Dataproc, Dataflow, Cloud Fucntion<br>
   - **Infrastructure build using Terraform**
     * VPC, VM Instances, Cloud Storge, Cloud SQL
     * GKE(Clusters)<br>
