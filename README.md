@@ -9,7 +9,8 @@
   - **Infrastructure build using Terraform**
     * VPC, VM Instances, Cloud Storge, Cloud SQL
     * GKE(Clusters)
-  - **Web application written in Python, JavaScript, HTML connecting to GCP services**
+  - **Web application
+    * Python, JavaScript, HTML, Flask, Angular
     * Pub/Sub, Cloud Spanner, Natural Language AI
     
 ## 2. AWS Team Project<br>
