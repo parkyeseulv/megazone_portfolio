@@ -1,6 +1,6 @@
 # **박예슬의 포트폴리오**<br>
 # CONTENTS<br>
-## 1. GCP Personal Project<br/><br>
+## 1. GCP Personal Project<br>
   - **Infrastructure build using CLI/Google Cloud SDK**
     * GKE(Containers, CI/CD pipeline using Jenkins)
     * GSR, GCR, Cloud Build
