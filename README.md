@@ -1,14 +1,14 @@
-# **박예슬의 포트폴리오**<br/>
+# **박예슬의 포트폴리오**<br>
 # CONTENTS
-## 1. GCP Personal Project<br/>
+## 1. GCP Personal Project<br/><br>
   - **Infrastructure build using CLI/Google Cloud SDK**
     * GKE(Containers, CI/CD pipeline using Jenkins)
     * GSR, GCR, Cloud Build
     * VPC, VM Instances, Cloud Storge, Cloud DNS, Cloud CDN
-    * Cloud SQL, Dataflow, BigQuery, 
+    * Cloud SQL, Dataflow, BigQuery,<br>
   - **Infrastructure build using Terraform**
     * VPC, VM Instances, Cloud Storge, Cloud SQL
-    * GKE(Clusters)
+    * GKE(Clusters)<br>
   - **Web application**
     * Python, JavaScript, HTML, Flask, Angular
     * Pub/Sub, Cloud Spanner, Natural Language AI
