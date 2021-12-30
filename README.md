@@ -13,7 +13,7 @@
     * Google Kubernetes Engine<br>
   - **Web application**
     * Python, JavaScript, HTML, Flask, Angular
-    * Pub/Sub, Cloud Spanner, Natural Language AI
+    * Pub/Sub, Cloud Spanner, Natural Language AI<br>
     
 ## 2. AWS Team Project<br>
 ![](https://storage.googleapis.com/znzn/aws_diagram.png)<br>
