@@ -9,7 +9,7 @@
   - **Infrastructure build using Terraform**
     * VPC, VM Instances, Cloud Storge, Cloud SQL
     * GKE(Clusters)
-  - **Web application
+  - **Web application**
     * Python, JavaScript, HTML, Flask, Angular
     * Pub/Sub, Cloud Spanner, Natural Language AI
     
