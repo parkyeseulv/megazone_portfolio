@@ -8,7 +8,7 @@
     * Cloud SQL, Cloud Bigtable
     * Dataproc, Dataflow, Cloud Function<br>
   - **Infrastructure build using Terraform**
-    * Virtual Private Cloud, Compute Engine, Cloud Storge, Cloud SQL
+    * Virtual Private Cloud, Compute Engine, Cloud Storge, Cloud SQL, Cloud DNS
     * Google Kubernetes Engine<br>
   - **Web application**
     * Python, JavaScript, HTML, Flask, Angular
