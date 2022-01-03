@@ -23,4 +23,6 @@
     * Amazon VPC, Amazon EC2, Amazon RDS, Amazon ElastiCache for Redis
     * Amazon ECS, Amazon VPC peering, AWS CloudFormation, AWS Global Accelerator,
     * Amazon Route 53, Amazon S3, Amazon CloudFront, ACM, AWS WAF, Amazon EventBridge
+<br><br>
+## 3. Skillsets and Experiences
 
