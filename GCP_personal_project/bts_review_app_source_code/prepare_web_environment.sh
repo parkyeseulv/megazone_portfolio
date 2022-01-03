@@ -12,6 +12,11 @@ echo "Installing Python libraries"
 pip install --upgrade pip
 pip install -r requirements.txt
 
+echo "Authorizing conatiner with SA"
+gcloud auth activate-service-account vm-ser-acc@hybrid-bts.iam.gserviceaccount.com \
+--key-file='./credentials.json' --project=hybrid-bts
+export GOOGLE_APPLICATION_CREDENTIALS="/home/dntwkzz79@gmail.com/bts_review_app/credentials.json"
+
 echo "Creating Cloud Pub/Sub topics"
 gcloud pubsub topics create review
 gcloud pubsub subscriptions create worker-subscription --topic review

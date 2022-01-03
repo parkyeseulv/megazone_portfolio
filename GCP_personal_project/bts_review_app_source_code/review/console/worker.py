@@ -5,36 +5,25 @@ import json
 
 from review.gcp import pubsub, languageapi, spanner
 
-"""
-Receives pulled messages, analyzes and stores them
-- Acknowledge the message
-- Log receipt and contents
-- convert json string
-- call helper module to do sentiment analysis
-- log sentiment score
-- call helper module to persist to spanner
-- log feedback saved
-"""
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+log = logging.getLogger()
+
 def pubsub_callback(message):
     message.ack()
+
+    log.info('Message received')
+    log.info(message)
+
     data = json.loads(message.data)
-
-    # Use the languageapi module to
-    # analyze the sentiment
     score = languageapi.analyze(str(data['review']))
+    log.info('Score: {}'.format(score))
 
-    # Assign the sentiment score to
-    # a new score property
     data['score'] = score
-    
-    # Use the spanner module to save the feedback
+    log.info(data['timestamp'])    
+
     spanner.save_review(data)
-    
-"""
-Pulls messages and loops forever while waiting
-- initiate pull
-- loop once a minute, forever
-"""
+    log.info('Feedback saved')    
+
 def main():
     pubsub.pull_review(pubsub_callback)
     
