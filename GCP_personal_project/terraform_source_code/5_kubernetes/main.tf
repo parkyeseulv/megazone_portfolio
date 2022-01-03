@@ -8,7 +8,6 @@ data "google_compute_subnetwork" "subnets" {
   region = var.region
 }
 
-# GKE cluster
 resource "google_container_cluster" "cluster" {
   name     = "${var.project_id}-gke2"
   project  = var.project_id
@@ -88,11 +87,6 @@ resource "google_container_node_pool" "mainpool" {
     project                     = "hybrid-bts"
     version                     = "1.21.5-gke.1302"
 
-    management {
-        auto_repair  = true
-        auto_upgrade = true
-    }
-
     node_config {
         disk_size_gb      = 10
         disk_type         = "pd-standard"
@@ -112,11 +106,7 @@ resource "google_container_node_pool" "mainpool" {
         service_account   = "build-ser-acc@hybrid-bts.iam.gserviceaccount.com"
         tags              = []
         taint             = []
-
-        shielded_instance_config {
-            enable_integrity_monitoring = true
-            enable_secure_boot          = false
-        }
+      
     }
 
     timeouts {}
