@@ -11,7 +11,8 @@
     * Dataproc, Dataflow, Cloud Function<br>
   - **Infrastructure build using Terraform**
     * Virtual Private Cloud, Compute Engine, Cloud Storge, Cloud SQL
-    * Google Kubernetes Engine<br>
+    * Google Kubernetes Engine
+    * IAM, Cloud DNS<br>
   - **Web application**
     * Python, JavaScript, HTML, Flask, Angular
     * Pub/Sub, Cloud Spanner, Natural Language AI<br><br>
