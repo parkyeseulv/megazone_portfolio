@@ -14,7 +14,7 @@
     * Google Kubernetes Engine
     * IAM, Cloud DNS<br>
   - **Web application**
-    * Python, JavaScript, HTML, Flask, Angular
+    * Python, JavaScript, HTML, Flask, AngularJS
     * Pub/Sub, Cloud Spanner, Natural Language AI<br><br>
     
 ## 2. AWS Team Project
