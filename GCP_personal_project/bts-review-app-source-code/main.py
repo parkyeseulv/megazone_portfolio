@@ -5,15 +5,15 @@ from flask import request, redirect
 
 app = Flask(__name__, static_folder='static')
 
-@app.route('/review')
+@app.route('/')
 def serve_home():
     return send_from_directory('review/webapp/static/client', 'index.html')
 
-@app.route('/review/<path:path>')
+@app.route('/<path:path>')
 def serve_client_files(path):
     return send_from_directory('review/webapp/static/client', path)
 
-@app.route('/review/post', methods=['POST'])
+@app.route('/review', methods=['POST'])
 def review_method():
     review = request.get_json()
     return api.publish_review(review)

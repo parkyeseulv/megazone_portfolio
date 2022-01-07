@@ -13,7 +13,7 @@
         };
 
         function sendReview(rating, review) {
-            return $http.post('/review/post', {
+            return $http.post('/review', {
                 review: review,
                 rating: rating,
                 timestamp: Date.now(),

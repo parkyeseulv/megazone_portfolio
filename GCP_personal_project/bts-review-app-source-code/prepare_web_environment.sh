@@ -3,12 +3,6 @@
 echo "Exporting GCLOUD_PROJECT"
 export GCLOUD_PROJECT=$DEVSHELL_PROJECT_ID
 
-echo "Creating virtual environment"
-#RUN pip install virtualenv
-#RUN mkdir ~/venvs
-#RUN virtualenv -p python3 ~/venvs/reviewapp
-#RUN source ~/venvs/reviewapp/bin/activate
-
 echo "Installing Python libraries"
 pip install --upgrade pip
 pip install -r requirements.txt

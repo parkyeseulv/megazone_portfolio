@@ -6,7 +6,7 @@
 
 
     function config($routeProvider) {
-        $routeProvider.when('/review/post', {
+        $routeProvider.when('/review', {
             controller: 'ReviewController',
             controllerAs: 'rc',
             templateUrl: 'app/review/review.html'
