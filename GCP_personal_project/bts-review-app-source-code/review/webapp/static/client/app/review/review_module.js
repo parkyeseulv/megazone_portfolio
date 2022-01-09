@@ -4,7 +4,6 @@
 
     module.config(['$routeProvider', config]);
 
-
     function config($routeProvider) {
         $routeProvider.when('/review', {
             controller: 'ReviewController',
@@ -12,6 +11,5 @@
             templateUrl: 'app/review/review.html'
         });
     }
-
-
+    
 })();

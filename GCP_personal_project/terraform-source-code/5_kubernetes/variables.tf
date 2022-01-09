@@ -1,3 +1,9 @@
+variable "gke_cluster" {
+  type        = string
+  default     = "bts-cluster"
+  description = "gke username"
+}
+
 variable "gke_username" {
   type        = string
   default     = ""
@@ -26,6 +32,12 @@ variable "ip_range_pods" {
   type        = string
   default     = "172.16.0.0/20"
   description = "The secondary ip range to use for pods"
+}
+
+variable "ip_range_cluster" {
+  type        = string
+  default     = "10.28.0.0/14"
+  description = "The secondary ip range to use for clusters"
 }
 
 variable "ip_range_services" {

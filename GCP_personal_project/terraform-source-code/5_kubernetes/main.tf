@@ -11,16 +11,16 @@ data "google_compute_subnetwork" "subnets" {
 
 # GKE cluster
 resource "google_container_cluster" "cluster" {
-  name         = "${var.project_id}-gke2"
+  name         = var.gke_cluster
   project      = var.project_id
   location     = var.region
   network      = data.google_compute_network.vpc_network.name
   subnetwork   = data.google_compute_subnetwork.subnets.name
 
   networking_mode = "VPC_NATIVE"
-  
+
   ip_allocation_policy {
-    cluster_ipv4_cidr_block  = "10.28.0.0/14"
+    cluster_ipv4_cidr_block  = var.ip_range_cluster
     services_ipv4_cidr_block = var.ip_range_services
   }
 
