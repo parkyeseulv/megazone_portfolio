@@ -2,7 +2,7 @@
 ## CONTENTS<br>
 ## 1. GCP Personal Project
 <br><br>
-<img src="https://storage.googleapis.com/bts-statics/gcp-fin.png" width="900"><br><br>
+<img src="https://storage.googleapis.com/bts-statics/gcp-fi.png" width="900"><br><br>
   - **Infrastructure build using CLI/Google Cloud SDK**
     * Google Kubernetes Engine(Containers, CI/CD pipeline using Jenkins, Istio)
     * Cloud Source Repository, Google Container Registry, Cloud Build
