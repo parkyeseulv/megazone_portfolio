@@ -1,25 +1,27 @@
 data "google_compute_network" "vpc_network" {
-  project=var.project_id
-  name = var.network_name
-}
-data "google_compute_subnetwork" "subnets" {
-  name   = var.priv_sub_1
   project = var.project_id
-  region = var.region
+  name    = var.network_name
+}
+
+data "google_compute_subnetwork" "subnets" {
+  name    = var.priv_sub_1
+  project = var.project_id
+  region  = var.region
 }
 
 # GKE cluster
 resource "google_container_cluster" "cluster" {
-  name     = "${var.project_id}-gke2"
-  project  = var.project_id
-  location = var.region
-  network  = data.google_compute_network.vpc_network.name
+  name         = "${var.project_id}-gke2"
+  project      = var.project_id
+  location     = var.region
+  network      = data.google_compute_network.vpc_network.name
   subnetwork   = data.google_compute_subnetwork.subnets.name
 
   networking_mode = "VPC_NATIVE"
+  
   ip_allocation_policy {
-    cluster_ipv4_cidr_block       = "10.28.0.0/14"
-    services_ipv4_cidr_block      = var.ip_range_services
+    cluster_ipv4_cidr_block  = "10.28.0.0/14"
+    services_ipv4_cidr_block = var.ip_range_services
   }
 
   remove_default_node_pool = true

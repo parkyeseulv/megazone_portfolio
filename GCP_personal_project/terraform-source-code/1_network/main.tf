@@ -33,7 +33,7 @@ resource "google_compute_firewall" "firewall" {
     ports    = ["22"]
   }
 
-  target_tags = ["bastion"]
+  target_tags   = ["bastion"]
   source_ranges = ["0.0.0.0/0"]
 }
 

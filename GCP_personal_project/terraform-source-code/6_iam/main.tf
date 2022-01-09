@@ -1,7 +1,7 @@
 
 resource "google_service_account" "kuber" {
-  account_id   = "kuber-cluster"
-  display_name = "kuber-cluster"
+  account_id   = var.sa_id
+  display_name = var.sa_id
 }
 
 resource "google_service_account_key" "kuberkey" {

@@ -3,11 +3,21 @@ kind: Ingress
 metadata:
   name: bts-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: "bts-global-ingress"
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.global-static-ip-name: "bts-ingress"
 spec:
   rules:
-  - http:
+  - host: "review.hybridbts.net"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: bts-review-service
+            port:
+              number: 80
+  - host: "*.hybridbts.net"
+    http:
       paths:
       - path: /
         pathType: Prefix

@@ -1,43 +1,51 @@
 variable "gke_username" {
+  type        = string
   default     = ""
   description = "gke username"
 }
 
 variable "gke_password" {
+  type        = string
   default     = ""
   description = "gke password"
 }
 
 variable "gke_num_nodes" {
+  type        = string
   default     = 1
   description = "number of gke nodes"
 }
 
 variable "master_ipv4_cidr_block" {
+  type        = string
   default     = "10.2.0.0/28"
   description = ""
 }
 
 variable "ip_range_pods" {
+  type        = string
   default     = "172.16.0.0/20"
   description = "The secondary ip range to use for pods"
 }
 
 variable "ip_range_services" {
+  type        = string
   default     = "10.32.0.0/20"
   description = "The secondary ip range to use for services"
 }
 
 variable "kuber_sa" {
+  type        = string
   default     = "kuber-admin"
   description = "vm-ser-acc@hybrid-bts.iam.gserviceaccount.com"
 }
 variable "key_name" {
-  type = string
-  default = "projects/hybrid-bts/serviceAccounts/vm-ser-acc@hybrid-bts.iam.gserviceaccount.com/keys/97203600b2164d524aea9f69996a6d6ad8edb624"
+  type        = string
+  default     = "projects/hybrid-bts/serviceAccounts/vm-ser-acc@hybrid-bts.iam.gserviceaccount.com/keys/97203600b2164d524aea9f69996a6d6ad8edb624"
   description = ""
 }
 variable "global_ip_name" {
+  type        = string
   default     = "bts-global-ingress"
   description = ""
 }
@@ -131,12 +139,6 @@ variable "priv_2_cidr" {
   type        = string
   description = ""
   default = "10.0.3.0/24"
-}
-
-variable "state_bucket_name" {
-  type        = string
-  description = ""
-  default = "bts-terraform"
 }
 
 

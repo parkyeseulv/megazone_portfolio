@@ -1,8 +1,9 @@
 #data resources
 data "google_compute_network" "vpc_network" {
-  project=var.project_id
-  name = var.network_name
+  project = var.project_id
+  name    = var.network_name
 }
+
 data "google_compute_subnetwork" "subnets" {
   name   = var.pub_sub_1
   region = var.region
@@ -10,11 +11,11 @@ data "google_compute_subnetwork" "subnets" {
 
 #bastion vm
 resource "google_compute_instance" "vm_instance" {
-  name = "bts-bastion-vm-1"
-  zone = "asia-northeast3-a"
+  name                    = "bts-bastion-vm"
+  zone                    = "asia-northeast3-a"
   metadata_startup_script = file("startup.sh")
-  machine_type = "f1-micro"
-  tags = ["bastion"]
+  machine_type            = "f1-micro"
+  tags                    = ["bastion"]
 
   boot_disk {
     initialize_params {
@@ -23,7 +24,7 @@ resource "google_compute_instance" "vm_instance" {
   }
 
   network_interface {
-    network = data.google_compute_network.vpc_network.name
+    network    = data.google_compute_network.vpc_network.name
     subnetwork = data.google_compute_subnetwork.subnets.name
   }
 
@@ -31,5 +32,4 @@ resource "google_compute_instance" "vm_instance" {
     email  = "vm-ser-acc@hybrid-bts.iam.gserviceaccount.com"
     scopes = ["cloud-platform"]
   }
-
 }

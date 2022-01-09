@@ -1,2 +1,2 @@
 #!/bin/bash
-apt install vi
+apt install vim -y
