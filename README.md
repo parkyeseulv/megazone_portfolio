@@ -25,5 +25,11 @@
     * Amazon ECS, Amazon VPC peering, AWS CloudFormation, AWS Global Accelerator,
     * Amazon Route 53, Amazon S3, Amazon CloudFront, ACM, AWS WAF, Amazon EventBridge
 <br><br>
-## 3. Skillsets and Experiences
+## 3. Azure Data pipeline
+<br><br>
+<img src="https://storage.googleapis.com/bts-static-1/azure_diagram.png" width="900"><br><br>
+- **Data pipeline build using Azure Data Factory**
+  * Azure Data Factory, Azure SQL Database, Azure Synapse Analytics, Azure Data Lake Storage Gen2
+<br><br>
+## 4. Skillsets and Experiences
 <br><br>
