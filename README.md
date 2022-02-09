@@ -30,5 +30,3 @@
 - **Data pipeline build using Azure Data Factory**
   * Azure Data Factory, Azure SQL Database, Azure Synapse Analytics, Azure Data Lake Storage Gen2
 <br><br>
-## 4. Skillsets and Experiences
-<br><br>
