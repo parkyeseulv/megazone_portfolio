@@ -1,6 +1,7 @@
 # **박예슬의 포트폴리오**<br>
 ## CONTENTS<br>
-## 1. AWS Team Project## 2021.10.8~2021.11.16
+## 1. AWS Team Project<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2021.10.8~2021.11.16
 <br><br>
 <img src="https://mega-gcp.s3.ap-northeast-2.amazonaws.com/aws_diagram.png" width="900"><br><br>
   - **Infrastructure build report in pdf, pptx formats**
